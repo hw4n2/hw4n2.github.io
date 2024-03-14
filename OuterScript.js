@@ -1,1 +1,1 @@
-akert('Welcome!');
+alert('Welcome!');
