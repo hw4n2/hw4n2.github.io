@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>hello</title>
-        <link rel="Stylesheet" href="style.css">
-        <script src="OuterScript.js"></script>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-        <p>Hello! I'm Junghwam Kim, Inha University, Republic of Korea.</p>
-        <table border = "1">
-            <tr>
-                <th>name</th>
-                <th>age</th>
-                <th>major</th>
-                <th>gender</th>
-            </tr>
-            <tr>
-                <td>Junghwan Kim</td>
-                <td>23</td>
-                <td>Computer Science Engineering</td>
-                <td>man</td>
-            </tr>
-        </table>
-    </body>
+
+<head>
+    <title>hello</title>
+    <style>
+        div h1 {
+            color: blue;
+            background: red;
+        }
+        .mydiv h1{
+            color : red;
+            background : blue;
+        }
+        #inputdiv input[type="radio"]:focus + label{
+            color : red;
+        }
+        body{
+            background-image:url('image.jpg');
+            background-repeat:no-repeat;
+
+        }
+        #scrolltest {
+            position:relative;
+            background-image:url('image.jpg');
+            background-attachment:fixed;
+            width:300px;
+            height:100px;
+            overflow-y: scroll;
+            overflow-x: auto;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>Hello! I'm Junghwam Kim, Inha University, Republic of Korea.</p>
+    <div>
+        <h1>This is my introduction.</h1>
+    </div>
+    <input id="man2" type="radio" name="gender2" checked>
+    <label for="man2" name="gender">남성</label>
+    <input id="woman2" type="radio" name="gender2">
+    <label for="woman2" name="gender">여성</label>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>major</th>
+            <th>gender</th>
+        </tr>
+        <tr class>
+            <td>Junghwan Kim</td>
+            <td>23</td>
+            <td><h1>Computer Science Engineering</h1></td>
+            <td>man</td>
+        </tr>
+    </table>
+    
+    <div class="mydiv">
+        <h1>heading1 in span</h1>
+        <h2>heading2 in span</h2>
+    </div>
+
+    <div id="inputdiv">
+        <input id="man" type="radio" name="gender" checked>
+        <label for="man" name="gender">남성</label>
+        <input id="woman" type="radio" name="gender">
+        <label for="woman" name="gender">여성</label>
+        
+    </div>
+    <h1>hello</h1>
+    <div id="scrolltest">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br>
+        ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssss<br></div>
+        <h1>world</h1>
+
+</body>
+
 </html>
