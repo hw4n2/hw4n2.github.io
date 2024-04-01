@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <title>김정환's page</title>
     <style>
-        #title{
-            position:relative;
+        #title {
+            position: relative;
         }
-        #quickmenu{
-            position:absolute;
+
+        #quickmenu {
+            position: absolute;
             height: auto;
             width: 10%;
             border: 2px solid black;
-            border-top: none;
             border-radius: 10px;
+        }
+
+        #contents {
+            position: relative;
         }
     </style>
 </head>
@@ -24,10 +28,18 @@
         <h1 id="title">인하대학교 인터넷 프로그래밍 - 실습</h1>
     </header>
     <aside>
-        <div id="quickmenu"></div>
+        <div id="quickmenu">
+            <span>빠른 메뉴</span>
+            <ul>
+                <li><a href="#Week5">Week5</a></li>
+                <li><a href="#Week6">Week6</a></li>
+                <li><a href="#Week7">Week7</a></li>
+                <li><a href="#Week8">Week8</a></li>
+            </ul>
+        </div>
     </aside>
     <nav>
-        <div>
+        <div id="contents">
             <p>목차</p>
             <ul>
                 <li><a href="#Week5">Internet Programming - Week5</a></li>
