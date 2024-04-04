@@ -62,7 +62,7 @@
             width: 300px;
             float:left; 
         }
-        .week5div{
+        figure.week5div{
             background-color:beige;
             width: 300px;
             border: 1px solid black;
@@ -70,7 +70,17 @@
             margin: 10px;
             padding: 5px;
             position: relative;
-            top: 50px;
+        }
+        figcaption.popup{
+            width: 600;
+            position: absolute;
+            display: none;
+        }
+        figure.week5div:hover figcaption.popup{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100px;
         }
         
     </style>
@@ -156,10 +166,13 @@
                     culpa qui officia deserunt mollit anim id est laborum."
                 </p>
                 
-                <div class="week5div">
+                <figure class="week5div">
                     <img class="week5img" src="image.jpg">
                     cloud image
-                </div>
+                    <figcaption class="popup">
+                        <img src="image.jpg">
+                    </figcaption>
+                </figure>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
