@@ -1,56 +1,138 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--test-->
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <title>김정환's page</title>
     <style>
-        #title {
-            position: relative;
+        hr {
+            border: 1px solid black;
         }
 
         #quickmenu {
             position: fixed;
-            right: 0;
-            top: 50%;
+            right: 1%;
+            top: 40%;
             height: auto;
             width: 10%;
-            border: 2px solid black;
-            border-radius: 10px;
+            border: 2px solid lightgrey;
+            border-radius: 3px;
+            overflow: hidden;
+            z-index: 1;
         }
 
-        #contents {
-            position: absolute;
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .maindiv {
+            height: auto;
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 10%;
+            border: 2px solid grey;
+            border-radius: 5px;
+
+
+        }
+
+        .weektitle {
+            font-size: 50px;
+            padding-left: 10%;
+        }
+
+        #introImage {
+            height: 400px;
+            width: 800px;
+            top: 50%;
+            margin-left: 10%;
+        }
+
+        .text {
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 id="title">인하대학교 인터넷 프로그래밍 - 실습</h1><hr>
+        <div id="title">
+            <h1>인터넷 프로그래밍 005 - 실습<br>
+                <h4>컴퓨터공학과 김정환(12211587)</h4>
+            </h1>
+        </div>
+
+        <hr>
     </header>
     <aside>
         <div id="quickmenu">
-            <span>빠른 메뉴</span>
+            <p style="padding: 15% 30% 5% 10%; margin: 0px;"><strong>빠른 메뉴</strong></p>
             <ul>
-                <li><a href="#Week5">Week5</a></li>
-                <li><a href="#Week6">Week6</a></li>
-                <li><a href="#Week7">Week7</a></li>
-                <li><a href="#Week8">Week8</a></li>
+                <li><a class="link" href="#before5">~Week4</a></li>
+                <li><a class="link" href="#Week5">Week5</a></li>
+                <li><a class="link" href="#Week6">Week6</a></li>
+                <li><a class="link" href="#Week7">Week7</a></li>
+                <li><a class="link" href="#Week8">Week8</a></li>
             </ul>
         </div>
     </aside>
     <nav>
         <div id="contents">
-            <p>목차</p>
+            <h1>
+                <p>목차</p>
+            </h1>
             <ul>
-                <li><a href="#Week5">Internet Programming - Week5</a></li>
-                <li><a href="#Week6">Internet Programming - Week6</a></li>
-                <li><a href="#Week7">Internet Programming - Week7</a></li>
-                <li><a href="#Week8">Internet Programming - Week8</a></li>
+                <li><a class="link" href="#before5">Internet Programming - Past Contents</a></li>
+                <li><a class="link" href="#Week5">Internet Programming - Week5</a></li>
+                <li><a class="link" href="#Week6">Internet Programming - Week6</a></li>
+                <li><a class="link" href="#Week7">Internet Programming - Week7</a></li>
+                <li><a class="link" href="#Week8">Internet Programming - Week8</a></li>
             </ul>
         </div>
     </nav>
+    <section>
+        <article>
+            <div class="maindiv" id="before5">
+                <h1 class="weektitle">
+                    <li>Week1 ~ Week4</li>
+                </h1>
+                <img id="introImage" src="intro.png" alt="이미지 없음">
+                <p style="text-align: center; color: grey; font-size: 12px;">HTML5와 CSS3를 활용한 웹 페이지 코드의 예시</p><br>
+                <p class="text">label과 input 태그를 활용한 회원가입 정보 입력 양식</p>
+                <table style="margin: 0 35% 0 35%">
+                    <tr>
+                        <td><label for="name" style="margin-right: 50px;"><strong>이름</strong></label></td>
+                        <td><input id="name" type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>성별</strong>
+                        </td>
+                        <td>
+                            <input id="man" type="radio" name="gender">
+                            <label for="man">남성</label>
+                            <input id="woman" type="radio" name="gender">
+                            <label for="woman">여성</label>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </article>
+        <article>
+            <div class="maindiv" id="Week5">
+                <h1 class="weektitle">
+                    <li>Week5</li>
+                </h1>
+            </div>
+        </article>
+    </section>
 </body>
 
 </html>
