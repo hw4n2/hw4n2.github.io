@@ -36,27 +36,44 @@
             width: 80%;
             margin-left: 5%;
             margin-top: 10%;
+            margin-bottom: 5%;
             border: 2px solid grey;
             border-radius: 5px;
-           
+            padding-top: 5%;
+
 
         }
+        .maindivFlex {
+            height: auto;
+            width: 80%;
+            margin-left: 5%;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            border: 2px solid grey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
 
         .weektitle {
             font-size: 50px;
             padding-left: 10%;
+            margin-top: 30px;
         }
 
 
-       
-        
-        .week5img{
+
+
+        .week5img {
             width: 300px;
-            float:left; 
+            float: left;
         }
-        
-        .week5div{
-            background-color:beige;
+
+        .week5div {
+            background-color: beige;
             width: 300px;
             border: 1px solid black;
             float: left;
@@ -64,44 +81,48 @@
             padding: 5px;
             position: relative;
         }
-        .popup{
+
+        .popup {
             width: 500px;
             position: absolute;
             display: none;
             top: -50px;
             left: 100px;
         }
-        .week5div:hover .popup{
+
+        .week5div:hover .popup {
             display: block;
             position: absolute;
-            
+
         }
 
 
-        .container{
+        .container {
             display: flex;
-            /*flex-wrap: wrap;*/
-            background-color: #4AB2D6;
+            flex-direction: column;
+            justify-content: center;
             width: 300px;
             margin: 50px;
         }
-        .container div{
-            background-color: #80CFEC;
+
+        .container div {
             margin: 2px;
             flex-basis: 200px;
         }
-        .gridcontainer{
+
+        .gridcontainer {
             background-color: #4AB2D6;
             width: 600px;
             margin: 50px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
-        .gridcontainer div{
+
+        .gridcontainer div {
             background-color: #80CFEC;
             margin: 2px;
         }
-        
+
 
 
         .popuptest {
@@ -112,9 +133,11 @@
             margin: 20px;
             position: relative;
         }
-        .cloudimage{
+
+        .cloudimage {
             width: 300px;
         }
+
         .popupimage {
             display: none;
             position: absolute;
@@ -127,9 +150,6 @@
             left: 50px;
             top: -150px;
         }
-        
-
-        
     </style>
 </head>
 
@@ -171,11 +191,13 @@
     </nav>
     <section>
         <article>
-            <div class="maindiv" id="before5"><!--week1~week4-->
-                <h1 class="weektitle">
-                    <li>Week1 ~ Week4</li>
-                </h1>
-                <img id="introImage" src="intro.png" alt="이미지 없음" style="height: 400px; width: 800px; position: relative; left: 12%; top: 30%;">
+        <h1 class="weektitle" id="before5">
+            <li>Week1 ~ Week4</li>
+        </h1>
+            <div class="maindiv"><!--week1~week4-->
+                
+                <img id="introImage" src="intro.png" alt="이미지 없음"
+                    style="height: 400px; width: 800px; position: relative; left: 12%; top: 30%;">
                 <p style="text-align: center; color: grey; font-size: 12px;">HTML5와 CSS3를 활용한 웹 페이지 코드의 예시</p><br>
                 <p style="text-align: center;">label과 input 태그를 활용한 회원가입 정보 입력 양식</p>
                 <table style="margin: 0 35% 0 35%">
@@ -199,48 +221,54 @@
             </div>
         </article>
         <article>
-            <div class="maindiv" id="Week5"><!--week5-->
-                <h1 class="weektitle">
-                    <li>Week5</li>
-                </h1>
+        <h1 class="weektitle" id="Week5">
+            <li>Week5</li>
+        </h1>
+            <div class="maindiv"><!--week5-->
+                
                 <p style="margin: 30px; padding: 10px; background: linear-gradient(to bottom,  #b8e1fc 0%,#a9d2f3 7%,#90bff0 20%,#90bae4 25%,#90bcea 37%,#90bff0 38%,#6ba8e5 72%,#a2daf5 95%,#bdf3fd 100%);
                 ">gradient test</p>
 
                 <h1 style="margin: 5px;">Float Example</h1>
-                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-                
+
                 <figure class="week5div">
                     <img src="image.jpg" class="week5img">
                     cloud image
-                    
-                        <img src="image.jpg" class="popup">
-                    
+
+                    <img src="image.jpg" class="popup">
+
                 </figure>
-                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p style="margin: 5px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."
                 </p>
                 <p>가상키보드 만들기 문제가 중간고사에 나옵니다...</p>
-                <br><hr style="margin: 20px;"><br>
+                <br>
+                <hr style="margin: 20px;"><br>
 
                 <div class="container">
                     <div>A</div>
@@ -257,7 +285,7 @@
                     <div>E</div>
                 </div>
                 <hr style="margin: 20px;">
-                
+
                 <div class="popuptest">
                     <img src="image.jpg" class="cloudimage">
                     popup practice
@@ -265,9 +293,129 @@
                 </div>
             </div>
 
-            
-
         </article>
+        <article>
+        <h1 class="weektitle" id="Week6">
+            <li>Week6</li>
+        </h1>
+            <div class="maindivFlex"><!--week6-->
+                <div id="first">
+                    <h1>DOM Example</h1>
+                    <p>Existing element</p>
+                </div>
+                <script>
+                    // begin by creating two new nodes
+                    const text = document.createTextNode("this is dynamic");
+                    const p = document.createElement("p");
+                    // add the text node to the <p> element node
+                    p.appendChild(text);
+                    // now add the new <p> element to the <div>
+                    const first = document.getElementById("first");
+                    first.appendChild(p);
+                </script>
+
+                <div>
+                    <h1>이벤트 핸들러</h1>
+                    <input type="submit" id="btn">
+                    <script>
+                        function simpleHandler() {
+                            alert("button was clicked");
+                        }
+                        const btn = document.querySelector("#btn");
+                        btn.addEventListener("click", simpleHandler);
+                        btn.addEventListener("click", function () {
+                            alert("button was clicked2");
+                        });
+
+                    </script>
+                </div>
+                <hr style="margin: 20px; width: 80%;">
+                <div class="flexitem">
+                <form method="post" action="login.php" id="loginForm">
+                    <label class="icon" for="username"><i class="fa fa-user fa-fw">
+                        </i></label>
+                    <input type="text" name="username" id="username" placeholder="UserName" /><br>
+                    <label class="icon" for="email"><i class="fa fa-envelope fa-fw">
+                        </i></label>
+                    <input type="text" name="email" id="email" placeholder="Email" /><br>
+                    <label class="icon" for="pass"><i class="fa fa-key fa-fw"></i>
+                    </label>
+                    <input type="password" name="pass" id="pass" placeholder="Password" /><br>
+                    <label class="icon" for="region"><i class="fa fa-home fa-fw"></i>
+                    </label>
+                    <input type="radio" name="region" id="europe" value="Europe" class="bigRadio"><span>Europe</span>
+                    <input type="radio" name="region" id="usa" value="United States" class="bigRadio"><span>United
+                        States</span><br>
+                    <label class="icon" for="payment">
+                        <i class="fa fa-fw" id="payLabel"></i></label>
+                    <select name="payment" id="payment"></select><br>
+                    <label class="icon" id="long" for="save">
+                        <i class="fa fa-database fa-fw"></i> Remember Me</label>
+                    <input type="checkbox" name="save" id="save" class="bigCheckBox" /><br>
+                    <button type="submit"><i class="fa fa-reply fa-fw"></i> Register
+                    </button>
+                </form>
+                <div id="errors" class="hidden"></div></div>
+                <script>
+                    function setBackground(e) {
+                        if (e.type == "focus") {
+                            e.target.style.backgroundColor = "#FFE393";
+                        }
+                        else if (e.type == "blur") {
+                            e.target.style.backgroundColor = "white";
+                        }
+                    }
+                    window.addEventListener("load", function () {
+                        const cssSelector = "input[type=text], input[type=password]";
+                        const fields = document.querySelectorAll(cssSelector);
+                        for (let f of fields) {
+                            f.addEventListener("focus", setBackground);
+                            f.addEventListener("blur", setBackground);
+                        }
+                    });
+                </script>
+                <hr style="margin: 20px; width: 80%;">
+                <h1>이벤트 핸들러를 활용한 로그인 폼</h1>
+                
+                <div style="display: flex; flex-direction: row">
+                    <table style="width: 300px;">
+                        <tr>
+                            <td><label for="id">아이디</label></td>
+                            <td><input id="id" type="text" name="id" placeholder="아이디" onkeypress="enterPress(event)"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">비밀번호</label></td>
+                            <td><input id="password" type="password" name="password" placeholder="비밀번호" onkeypress="enterPress(event)"></td>     
+                        </tr>
+                    </table>
+                    <input id="login" type="submit" name="login" value="로그인" style="border-radius: 3px; border: 1px solid black; background-color: greenyellow; height: 50px; width: 80px; margin-top: 4px">
+                </div><br>
+                <script>
+                    function loginSubmit(){
+                        const inputId = document.getElementById("id");
+                        const inputPw = document.getElementById("password");
+                        if(inputId.value == "" || inputPw.value == ""){
+                            alert("입력한 정보를 확인해 주세요.");
+                            inputId.value = "";
+                            inputPw.value = "";
+                        }
+                        else{
+                            confirm(`${inputId.value}님, 환영합니다.`);
+                        }
+                    };
+                    function enterPress(e){
+                        if(e.code == 'Enter'){
+                            loginSubmit();
+                        }
+                    }
+                    
+                    document.getElementById("login").addEventListener("click", loginSubmit);
+                </script>
+            </div>
+        </article>
+
+        
+
     </section>
 </body>
 
