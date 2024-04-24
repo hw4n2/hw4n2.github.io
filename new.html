@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        li:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* li:nth-child(2n){
+            background-color: red;
+        }
+        li:nth-child(2n + 1){
+            background-color: yellow;
+        } */
+        .btn {
+
+            border: 1px dotted black;
+            width: 35px;
+            height: 20px;
+        }
+
+        .respond {
+            width: 50px;
+        }
+
+        .respond:active {
+            color: red;
+        }
+
+        .popup {
+            display: none;
+            position: absolute;
+            color: black;
+        }
+
+        .respond:hover .popup {
+            position: absolute;
+            left: 50px;
+            display: block;
+            color: black;
+        }
+
+        #imgText {
+            background-color: beige;
+            width: 300px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #imgText img {
+            width: 300px;
+            height: 180px;
+        }
+
+        #popupimg {
+            display: none;
+
+        }
+
+        #imgText:hover #popupimg {
+            position: absolute;
+            display: block;
+            left: 700px;
+            top: 50px;
+            width: 600px;
+            height: 350px;
+            z-index: 1;
+
+        }
+
+        .login {
+            position: relative;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            background-color: skyblue;
+            border-radius: 5px;
+            top: 50px;
+            padding: 5px 20px 5px 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .loginbtn{
+            width: 80px;
+            height: 60px;
+            background-color: rgb(86, 151, 86);
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", clickLogin);
+        function clickLogin(){
+            let btn = document.getElementsByClassName("loginbtn");
+            btn[0].addEventListener("click", function(){
+                let inputVal = document.getElementsByName("userinfo");
+                if(inputVal[0].value == "" || inputVal[1].value == "") alert("아이디와 비밀번호를 입력해 주세요.");
+                else alert(`${inputVal[0].value} 님 환영합니다`);
+                inputVal[0].value = "";
+                inputVal[1].value = "";
+            })
+        }
+    </script>
+
+</head>
+
+<body>
+    <table border="1px">
+        <tr>
+            <th colspan="2">시험과목</th>
+        </tr>
+        <tr>
+            <th rowspan="3">전공,교필</th>
+            <td>인터넷 프로그래밍</td>
+        </tr>
+        <tr>
+            <td>자료구조</td>
+        </tr>
+        <tr>
+            <td>통계학</td>
+        </tr>
+        <tr>
+            <th rowspan="2">교선</th>
+            <td>생활과민속</td>
+        </tr>
+        <tr>
+            <td>오미</td>
+        </tr>
+
+    </table>
+
+    <div>
+        <select>
+            <option>c++</option>
+            <option>c</option>
+            <option>Python</option>
+            <option>java</option>
+        </select>
+    </div>
+
+    <ul style="display: inline-block;">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+        <li>fifth</li>
+        <li>sixth</li>
+        <li>seventh</li>
+    </ul>
+    <div class="btn"></div>
+
+    <script>
+        let btn = document.getElementsByClassName("btn");
+        btn[0].textContent = "버튼";
+        btn[0].addEventListener("click", function () {
+            alert(btn[0].textContent);
+        });
+
+    </script>
+    <div class="respond">
+        hello
+        <div class="popup">world</div>
+    </div>
+    <div class="container">
+
+        <div id="imgText">
+            <img src="C:\Users\김정환\Desktop\사고율.png">
+            accident rate
+            <img id="popupimg" src="C:\Users\김정환\Desktop\사고율.png">
+        </div>
+
+        <div class="login">
+            <li>
+                <ul>
+                    <label for="userid" style="padding-right: 18px">아이디</label>
+                    <input id="userid" type="text" name="userinfo" autofocus>
+                </ul>
+                <ul>
+                    <label for="userpw" style="padding-right: 2px;">비밀번호</label>
+                    <input id="userpw" type="password" name="userinfo">
+                </ul>
+            </li>
+            <div class="loginbtn">로그인</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
