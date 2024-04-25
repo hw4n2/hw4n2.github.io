@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let textbox = document.getElementsByClassName("textbox");
+
+                let btns = document.querySelectorAll(".item");
+                for(let btn of btns){
+                    btn.addEventListener("click", function(){
+                        if(btn.textContent == "enter"){
+                            alert(textbox[0].value);
+                        }
+                        else textbox[0].value = textbox[0].value + btn.textContent;
+                    })
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <textarea class="textbox"></textarea>
+        <div class="outer">
+            <div class="item">←</div>
+            <div class="item">/</div>
+            <div class="item">*</div>
+            <div class="item">-</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">+</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">enter</div>
+            <div class="item">0</div>
+            <div class="item">.</div>
+
+        </div>
+    </body>
+</html>
